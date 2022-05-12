@@ -9,3 +9,7 @@ git add nome_do_arquivo
 
 para incluir o comentario devo dar o comando
 git commit -m "comentario descrito"
+
+
+robotframe work
+o metodo should be equal do robot framework compara 2 string
