@@ -1,51 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220516 15:05:03.638" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220516 17:06:25.420" rpa="false" schemaversion="3">
 <suite id="s1" name="Checkid" source="C:\Users\eusou\qaninja\robot\webcheckbox\checkid.robot">
-<test id="s1-t1" name="Testing multi-checkbox" line="8">
+<test id="s1-t1" name="Testing checkbox com CSS Selector" line="16">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${url}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220516 15:05:03.865" level="INFO">Opening browser 'chrome' to base url 'https://training-wheels-protocol.herokuapp.com'.</msg>
-<status status="PASS" starttime="20220516 15:05:03.864" endtime="20220516 15:05:07.941"/>
+<msg timestamp="20220516 17:06:25.657" level="INFO">Opening browser 'chrome' to base url 'https://training-wheels-protocol.herokuapp.com'.</msg>
+<status status="PASS" starttime="20220516 17:06:25.657" endtime="20220516 17:06:28.860"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${url}/checkboxes</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220516 15:05:07.942" level="INFO">Opening url 'https://training-wheels-protocol.herokuapp.com/checkboxes'</msg>
-<status status="PASS" starttime="20220516 15:05:07.942" endtime="20220516 15:05:08.135"/>
+<msg timestamp="20220516 17:06:28.861" level="INFO">Opening url 'https://training-wheels-protocol.herokuapp.com/checkboxes'</msg>
+<status status="PASS" starttime="20220516 17:06:28.861" endtime="20220516 17:06:29.065"/>
 </kw>
 <kw name="Select Checkbox" library="SeleniumLibrary">
-<arg>id:thor</arg>
+<arg>css:input[value='iron-man']</arg>
 <doc>Selects the checkbox identified by ``locator``.</doc>
-<msg timestamp="20220516 15:05:08.136" level="INFO">Selecting checkbox 'id:thor'.</msg>
-<status status="PASS" starttime="20220516 15:05:08.136" endtime="20220516 15:05:08.186"/>
+<msg timestamp="20220516 17:06:29.066" level="INFO">Selecting checkbox 'css:input[value='iron-man']'.</msg>
+<status status="PASS" starttime="20220516 17:06:29.066" endtime="20220516 17:06:29.128"/>
 </kw>
 <kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
-<arg>id:thor</arg>
+<arg>css:input[value='iron-man']</arg>
 <doc>Verifies checkbox ``locator`` is selected/checked.</doc>
-<msg timestamp="20220516 15:05:08.188" level="INFO">Verifying checkbox 'id:thor' is selected.</msg>
-<status status="PASS" starttime="20220516 15:05:08.187" endtime="20220516 15:05:08.206"/>
+<msg timestamp="20220516 17:06:29.129" level="INFO">Verifying checkbox 'css:input[value='iron-man']' is selected.</msg>
+<status status="PASS" starttime="20220516 17:06:29.128" endtime="20220516 17:06:29.146"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220516 15:05:13.222" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20220516 15:05:08.206" endtime="20220516 15:05:13.222"/>
+<msg timestamp="20220516 17:06:34.159" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220516 17:06:29.146" endtime="20220516 17:06:34.159"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220516 15:05:13.222" endtime="20220516 15:05:15.341"/>
+<status status="PASS" starttime="20220516 17:06:34.161" endtime="20220516 17:06:36.283"/>
 </kw>
-<status status="PASS" starttime="20220516 15:05:03.864" endtime="20220516 15:05:15.341"/>
+<tag>ironman</tag>
+<status status="PASS" starttime="20220516 17:06:25.656" endtime="20220516 17:06:36.283"/>
 </test>
-<status status="PASS" starttime="20220516 15:05:03.638" endtime="20220516 15:05:15.343"/>
+<status status="PASS" starttime="20220516 17:06:25.422" endtime="20220516 17:06:36.285"/>
 </suite>
 <statistics>
 <total>
 <stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
+<stat pass="1" fail="0" skip="0">ironman</stat>
 </tag>
 <suite>
 <stat pass="1" fail="0" skip="0" id="s1" name="Checkid">Checkid</stat>

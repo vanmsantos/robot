@@ -13,3 +13,11 @@ Testing multi-checkbox
     Sleep                          5 
     Close Browser   
 
+Testing checkbox com CSS Selector
+    [Tags]        ironman
+    Open Browser                    ${url}        chrome
+    Go To                           ${url}/checkboxes
+    Select Checkbox                 css:input[value='iron-man']
+    Checkbox Should Be Selected     css:input[value='iron-man']
+    Sleep                           5
+    Close Browser
