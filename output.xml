@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.7.5 on win32)" generated="20220516 14:10:51.845" rpa="false" schemaversion="3">
+<suite id="s1" name="Checkbox" source="c:\Users\eusou\qaninja\robot\WebCheckbox\checkbox.robot">
+<test id="s1-t1" name="Validacao do botao" line="5">
+<status status="FAIL" starttime="20220516 14:10:52.228" endtime="20220516 14:10:52.235">Test contains no keywords.</status>
+</test>
+<test id="s1-t2" name="Open Browser" line="6">
+<status status="FAIL" starttime="20220516 14:10:52.237" endtime="20220516 14:10:52.237">Test contains no keywords.</status>
+</test>
+<test id="s1-t3" name="Close Browser" line="7">
+<status status="FAIL" starttime="20220516 14:10:52.238" endtime="20220516 14:10:52.238">Test contains no keywords.</status>
+</test>
+<status status="FAIL" starttime="20220516 14:10:51.854" endtime="20220516 14:10:52.239"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="3" skip="0" id="s1" name="Checkbox">Checkbox</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
