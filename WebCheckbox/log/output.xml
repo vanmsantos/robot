@@ -1,46 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220516 17:33:33.432" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220517 16:30:56.698" rpa="false" schemaversion="3">
 <suite id="s1" name="Checkid" source="C:\Users\eusou\qaninja\robot\webcheckbox\checkid.robot">
-<test id="s1-t1" name="Testing checkbox com CSS Selector" line="16">
+<test id="s1-t1" name="Testing checkbox com Xpath" line="28">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${url}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220516 17:33:33.659" level="INFO">Opening browser 'chrome' to base url 'https://training-wheels-protocol.herokuapp.com'.</msg>
-<status status="PASS" starttime="20220516 17:33:33.658" endtime="20220516 17:33:37.727"/>
+<msg timestamp="20220517 16:30:56.926" level="INFO">Opening browser 'chrome' to base url 'https://training-wheels-protocol.herokuapp.com'.</msg>
+<status status="PASS" starttime="20220517 16:30:56.926" endtime="20220517 16:31:00.300"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${url}/checkboxes</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220516 17:33:37.728" level="INFO">Opening url 'https://training-wheels-protocol.herokuapp.com/checkboxes'</msg>
-<status status="PASS" starttime="20220516 17:33:37.728" endtime="20220516 17:33:37.930"/>
+<msg timestamp="20220517 16:31:00.302" level="INFO">Opening url 'https://training-wheels-protocol.herokuapp.com/checkboxes'</msg>
+<status status="PASS" starttime="20220517 16:31:00.301" endtime="20220517 16:31:00.518"/>
 </kw>
 <kw name="Select Checkbox" library="SeleniumLibrary">
-<arg>css:input[value='iron-man']</arg>
+<arg>${checkpanther}</arg>
 <doc>Selects the checkbox identified by ``locator``.</doc>
-<msg timestamp="20220516 17:33:37.931" level="INFO">Selecting checkbox 'css:input[value='iron-man']'.</msg>
-<status status="PASS" starttime="20220516 17:33:37.930" endtime="20220516 17:33:37.983"/>
+<msg timestamp="20220517 16:31:00.520" level="INFO">Selecting checkbox 'xpath://*[@id='checkboxes']/input[7]'.</msg>
+<status status="PASS" starttime="20220517 16:31:00.519" endtime="20220517 16:31:00.576"/>
 </kw>
 <kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
-<arg>css:input[value='iron-man']</arg>
+<arg>${checkpanther}</arg>
 <doc>Verifies checkbox ``locator`` is selected/checked.</doc>
-<msg timestamp="20220516 17:33:37.984" level="INFO">Verifying checkbox 'css:input[value='iron-man']' is selected.</msg>
-<status status="PASS" starttime="20220516 17:33:37.984" endtime="20220516 17:33:38.000"/>
+<msg timestamp="20220517 16:31:00.577" level="INFO">Verifying checkbox 'xpath://*[@id='checkboxes']/input[7]' is selected.</msg>
+<status status="PASS" starttime="20220517 16:31:00.577" endtime="20220517 16:31:00.594"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220516 17:33:43.002" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20220516 17:33:38.001" endtime="20220516 17:33:43.002"/>
+<msg timestamp="20220517 16:31:05.599" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220517 16:31:00.595" endtime="20220517 16:31:05.599"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220516 17:33:43.002" endtime="20220516 17:33:45.120"/>
+<status status="PASS" starttime="20220517 16:31:05.599" endtime="20220517 16:31:07.710"/>
 </kw>
 <tag>ironman</tag>
-<status status="PASS" starttime="20220516 17:33:33.658" endtime="20220516 17:33:45.120"/>
+<status status="PASS" starttime="20220517 16:30:56.921" endtime="20220517 16:31:07.710"/>
 </test>
-<status status="PASS" starttime="20220516 17:33:33.432" endtime="20220516 17:33:45.121"/>
+<status status="PASS" starttime="20220517 16:30:56.698" endtime="20220517 16:31:07.713"/>
 </suite>
 <statistics>
 <total>
