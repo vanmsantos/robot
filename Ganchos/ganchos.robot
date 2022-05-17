@@ -1,31 +1,37 @@
 *** Settings ***
 Library    SeleniumLibrary
+Test Setup        New Session
+Test Teardown     Close Session
 
-Test Setup        
-Test Teardown
+*** Variables ***
+${checkthor}            id:thor
+${checkironman}         css: #checkboxes > input[type=checkbox]:nth-child(3)
+${checkblackpanter}     xpath://*[@id='checkboxes']/input[7]
+${url}                  https://training-wheels-protocol.herokuapp.com/checkboxes        
+
+
+*** Keywords ***
+New Session          Open Browser          ${url}        chrome 
+Close Session        Close Browser 
 
 
 *** Test Cases ***
-Validade option checkbox
-    Open Browser                    https://training-wheels-protocol.herokuapp.com/checkboxes    chrome
-    Select Checkbox                 id:thor
-    Checkbox Should Be Selected     id:thor
-    Sleep                            5
-    Close Browser 
+Validade option checkbox    
+    Select Checkbox                 ${checkthor}
+    Checkbox Should Be Selected     ${checkthor}
+    Sleep                           5
+  
 
-
-Validade CSS
-    Open Browser                   https://training-wheels-protocol.herokuapp.com/checkboxes        chrome
-    Select Checkbox                css: #checkboxes > input[type=checkbox]:nth-child(3)
-    Checkbox Should Be Selected    css: #checkboxes > input[type=checkbox]:nth-child(3)
-    Sleep    5
-    Close browser
-
-
-Validade xpath
-    Open Browser                   https://training-wheels-protocol.herokuapp.com/checkboxes        chrome
-    Select Checkbox                xpath://*[@id='checkboxes']/input[7]
-    Checkbox Should Be Selected    xpath://*[@id='checkboxes']/input[7]
+Validade CSS  
+    Select Checkbox                ${checkironman}
+    Checkbox Should Be Selected    ${checkironman}
     Sleep                          5
-    Close Browser    
+
+
+Validade xpath    
+    Select Checkbox                ${checkblackpanter}
+    Checkbox Should Be Selected    ${checkblackpanter}
+    Sleep                          5
+       
+
 
