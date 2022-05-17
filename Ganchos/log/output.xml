@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220517 17:20:53.006" rpa="false" schemaversion="3">
+<suite id="s1" name="Ganchos" source="C:\Users\eusou\qaninja\robot\ganchos\ganchos.robot">
+<test id="s1-t1" name="Validade option checkbox" line="6">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://training-wheels-protocol.herokuapp.com/checkboxes</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220517 17:20:53.239" level="INFO">Opening browser 'chrome' to base url 'https://training-wheels-protocol.herokuapp.com/checkboxes'.</msg>
+<status status="PASS" starttime="20220517 17:20:53.239" endtime="20220517 17:20:56.875"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>id:thor</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20220517 17:20:56.876" level="INFO">Selecting checkbox 'id:thor'.</msg>
+<status status="PASS" starttime="20220517 17:20:56.875" endtime="20220517 17:20:56.928"/>
+</kw>
+<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
+<arg>id:thor</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<msg timestamp="20220517 17:20:56.929" level="INFO">Verifying checkbox 'id:thor' is selected.</msg>
+<status status="PASS" starttime="20220517 17:20:56.928" endtime="20220517 17:20:56.945"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220517 17:21:01.959" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220517 17:20:56.945" endtime="20220517 17:21:01.959"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220517 17:21:01.959" endtime="20220517 17:21:04.098"/>
+</kw>
+<status status="PASS" starttime="20220517 17:20:53.229" endtime="20220517 17:21:04.099"/>
+</test>
+<test id="s1-t2" name="Validade CSS" line="14">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://training-wheels-protocol.herokuapp.com/checkboxes</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220517 17:21:04.100" level="INFO">Opening browser 'chrome' to base url 'https://training-wheels-protocol.herokuapp.com/checkboxes'.</msg>
+<status status="PASS" starttime="20220517 17:21:04.100" endtime="20220517 17:21:07.470"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>css: #checkboxes &gt; input[type=checkbox]:nth-child(3)</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20220517 17:21:07.471" level="INFO">Selecting checkbox 'css: #checkboxes &gt; input[type=checkbox]:nth-child(3)'.</msg>
+<status status="PASS" starttime="20220517 17:21:07.470" endtime="20220517 17:21:07.523"/>
+</kw>
+<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
+<arg>css: #checkboxes &gt; input[type=checkbox]:nth-child(3)</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<msg timestamp="20220517 17:21:07.523" level="INFO">Verifying checkbox 'css: #checkboxes &gt; input[type=checkbox]:nth-child(3)' is selected.</msg>
+<status status="PASS" starttime="20220517 17:21:07.523" endtime="20220517 17:21:07.539"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220517 17:21:12.541" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220517 17:21:07.540" endtime="20220517 17:21:12.541"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220517 17:21:12.541" endtime="20220517 17:21:14.655"/>
+</kw>
+<status status="PASS" starttime="20220517 17:21:04.099" endtime="20220517 17:21:14.655"/>
+</test>
+<test id="s1-t3" name="Validade xpath" line="22">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://training-wheels-protocol.herokuapp.com/checkboxes</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220517 17:21:14.658" level="INFO">Opening browser 'chrome' to base url 'https://training-wheels-protocol.herokuapp.com/checkboxes'.</msg>
+<status status="PASS" starttime="20220517 17:21:14.658" endtime="20220517 17:21:19.907"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>xpath://*[@id='checkboxes']/input[7]</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20220517 17:21:19.908" level="INFO">Selecting checkbox 'xpath://*[@id='checkboxes']/input[7]'.</msg>
+<status status="PASS" starttime="20220517 17:21:19.908" endtime="20220517 17:21:19.959"/>
+</kw>
+<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
+<arg>xpath://*[@id='checkboxes']/input[7]</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<msg timestamp="20220517 17:21:19.959" level="INFO">Verifying checkbox 'xpath://*[@id='checkboxes']/input[7]' is selected.</msg>
+<status status="PASS" starttime="20220517 17:21:19.959" endtime="20220517 17:21:19.976"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220517 17:21:24.992" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220517 17:21:19.976" endtime="20220517 17:21:24.992"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220517 17:21:24.992" endtime="20220517 17:21:27.104"/>
+</kw>
+<status status="PASS" starttime="20220517 17:21:14.658" endtime="20220517 17:21:27.104"/>
+</test>
+<status status="PASS" starttime="20220517 17:20:53.006" endtime="20220517 17:21:27.107"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Ganchos">Ganchos</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -25,7 +25,7 @@ Testing checkbox com CSS Selector
     Sleep                           5
     Close Browser
 
-Testing checkbox com Xpath
+Testing checkbox com Xpath e usando a tag para rodar apenas este cenarios
       [Tags]            ironman
     Open Browser                    ${url}        chrome
     Go To                           ${url}/checkboxes
