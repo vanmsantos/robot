@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220516 13:21:14.407" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220517 18:51:05.365" rpa="false" schemaversion="3">
 <suite id="s1" name="Test" source="C:\Users\eusou\qaninja\robot\hello\test.robot">
 <test id="s1-t1" name="Deve retornar mensagem de boas vindas" line="7">
 <kw name="Welcome" library="app">
 <var>${result}</var>
 <arg>Fernando</arg>
-<msg timestamp="20220516 13:21:14.459" level="INFO">${result} = Ola Fernando, bem vindo ao curso basico de robot framework!</msg>
-<status status="PASS" starttime="20220516 13:21:14.457" endtime="20220516 13:21:14.459"/>
+<msg timestamp="20220517 18:51:05.706" level="INFO">${result} = Ola Fernando, bem vindo ao curso basico de robot framework!</msg>
+<status status="PASS" starttime="20220517 18:51:05.706" endtime="20220517 18:51:05.706"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${result}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220516 13:21:14.459" endtime="20220516 13:21:14.459"/>
+<status status="PASS" starttime="20220517 18:51:05.706" endtime="20220517 18:51:05.707"/>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <arg>${result}</arg>
 <arg>Ola Fernando, bem vindo ao curso basico de robot framework!</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20220516 13:21:14.459" endtime="20220516 13:21:14.459"/>
+<status status="PASS" starttime="20220517 18:51:05.707" endtime="20220517 18:51:05.707"/>
 </kw>
-<status status="PASS" starttime="20220516 13:21:14.457" endtime="20220516 13:21:14.460"/>
+<status status="PASS" starttime="20220517 18:51:05.705" endtime="20220517 18:51:05.707"/>
 </test>
-<status status="PASS" starttime="20220516 13:21:14.407" endtime="20220516 13:21:14.460"/>
+<status status="PASS" starttime="20220517 18:51:05.367" endtime="20220517 18:51:05.708"/>
 </suite>
 <statistics>
 <total>
