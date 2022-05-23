@@ -1,19 +1,15 @@
 *** Settings ***
-Library    SeleniumLibrary
+Resource        base.robot
 
 Test Setup        New Session
 Test Teardown     Close Session
 
 *** Variables ***
-${url}                  https://training-wheels-protocol.herokuapp.com        
+  
 ${checkthor}            id:thor
 ${checkironman}         css: #checkboxes > input[type=checkbox]:nth-child(3)
 ${checkblackpanter}     xpath://*[@id='checkboxes']/input[7]
 
-
-*** Keywords ***
-New Session          Open Browser          ${url}/checkboxes         chrome 
-Close Session        Close Browser 
 
 
 *** Test Cases ***

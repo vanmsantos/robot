@@ -1,121 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220517 17:34:06.160" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220523 18:02:46.865" rpa="false" schemaversion="3">
 <suite id="s1" name="Ganchos" source="C:\Users\eusou\qaninja\robot\ganchos\ganchos.robot">
-<test id="s1-t1" name="Validade option checkbox" line="9">
-<kw name="New Session" type="SETUP">
+<test id="s1-t1" name="Validade option checkbox" line="16">
+<kw name="New Session" library="base" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>https://training-wheels-protocol.herokuapp.com/checkboxes</arg>
+<arg>${url}/checkboxes</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220517 17:34:06.395" level="INFO">Opening browser 'chrome' to base url 'https://training-wheels-protocol.herokuapp.com/checkboxes'.</msg>
-<status status="PASS" starttime="20220517 17:34:06.395" endtime="20220517 17:34:12.354"/>
+<msg timestamp="20220523 18:02:47.175" level="INFO">Opening browser 'chrome' to base url 'https://training-wheels-protocol.herokuapp.com/checkboxes'.</msg>
+<status status="PASS" starttime="20220523 18:02:47.174" endtime="20220523 18:02:50.638"/>
 </kw>
-<status status="PASS" starttime="20220517 17:34:06.395" endtime="20220517 17:34:12.354"/>
+<status status="PASS" starttime="20220523 18:02:47.174" endtime="20220523 18:02:50.639"/>
 </kw>
 <kw name="Select Checkbox" library="SeleniumLibrary">
-<arg>id:thor</arg>
+<arg>${checkthor}</arg>
 <doc>Selects the checkbox identified by ``locator``.</doc>
-<msg timestamp="20220517 17:34:12.355" level="INFO">Selecting checkbox 'id:thor'.</msg>
-<status status="PASS" starttime="20220517 17:34:12.354" endtime="20220517 17:34:12.403"/>
+<msg timestamp="20220523 18:02:50.639" level="INFO">Selecting checkbox 'id:thor'.</msg>
+<status status="PASS" starttime="20220523 18:02:50.639" endtime="20220523 18:02:50.690"/>
 </kw>
 <kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
-<arg>id:thor</arg>
+<arg>${checkthor}</arg>
 <doc>Verifies checkbox ``locator`` is selected/checked.</doc>
-<msg timestamp="20220517 17:34:12.403" level="INFO">Verifying checkbox 'id:thor' is selected.</msg>
-<status status="PASS" starttime="20220517 17:34:12.403" endtime="20220517 17:34:12.420"/>
+<msg timestamp="20220523 18:02:50.691" level="INFO">Verifying checkbox 'id:thor' is selected.</msg>
+<status status="PASS" starttime="20220523 18:02:50.691" endtime="20220523 18:02:50.708"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220517 17:34:17.423" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20220517 17:34:12.420" endtime="20220517 17:34:17.423"/>
+<msg timestamp="20220523 18:02:55.724" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220523 18:02:50.708" endtime="20220523 18:02:55.724"/>
 </kw>
-<kw name="Close Session" type="TEARDOWN">
+<kw name="Close Session" library="base" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220517 17:34:17.424" endtime="20220517 17:34:19.564"/>
+<status status="PASS" starttime="20220523 18:02:55.724" endtime="20220523 18:02:57.857"/>
 </kw>
-<status status="PASS" starttime="20220517 17:34:17.424" endtime="20220517 17:34:19.564"/>
+<status status="PASS" starttime="20220523 18:02:55.724" endtime="20220523 18:02:57.857"/>
 </kw>
-<status status="PASS" starttime="20220517 17:34:06.394" endtime="20220517 17:34:19.565"/>
+<status status="PASS" starttime="20220523 18:02:47.167" endtime="20220523 18:02:57.857"/>
 </test>
-<test id="s1-t2" name="Validade CSS" line="15">
-<kw name="New Session" type="SETUP">
+<test id="s1-t2" name="Validade CSS" line="22">
+<kw name="New Session" library="base" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>https://training-wheels-protocol.herokuapp.com/checkboxes</arg>
+<arg>${url}/checkboxes</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220517 17:34:19.567" level="INFO">Opening browser 'chrome' to base url 'https://training-wheels-protocol.herokuapp.com/checkboxes'.</msg>
-<status status="PASS" starttime="20220517 17:34:19.567" endtime="20220517 17:34:24.438"/>
+<msg timestamp="20220523 18:02:57.860" level="INFO">Opening browser 'chrome' to base url 'https://training-wheels-protocol.herokuapp.com/checkboxes'.</msg>
+<status status="PASS" starttime="20220523 18:02:57.860" endtime="20220523 18:03:03.069"/>
 </kw>
-<status status="PASS" starttime="20220517 17:34:19.566" endtime="20220517 17:34:24.438"/>
+<status status="PASS" starttime="20220523 18:02:57.859" endtime="20220523 18:03:03.069"/>
 </kw>
 <kw name="Select Checkbox" library="SeleniumLibrary">
-<arg>css: #checkboxes &gt; input[type=checkbox]:nth-child(3)</arg>
+<arg>${checkironman}</arg>
 <doc>Selects the checkbox identified by ``locator``.</doc>
-<msg timestamp="20220517 17:34:24.439" level="INFO">Selecting checkbox 'css: #checkboxes &gt; input[type=checkbox]:nth-child(3)'.</msg>
-<status status="PASS" starttime="20220517 17:34:24.438" endtime="20220517 17:34:24.490"/>
+<msg timestamp="20220523 18:03:03.070" level="INFO">Selecting checkbox 'css: #checkboxes &gt; input[type=checkbox]:nth-child(3)'.</msg>
+<status status="PASS" starttime="20220523 18:03:03.070" endtime="20220523 18:03:03.118"/>
 </kw>
 <kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
-<arg>css: #checkboxes &gt; input[type=checkbox]:nth-child(3)</arg>
+<arg>${checkironman}</arg>
 <doc>Verifies checkbox ``locator`` is selected/checked.</doc>
-<msg timestamp="20220517 17:34:24.491" level="INFO">Verifying checkbox 'css: #checkboxes &gt; input[type=checkbox]:nth-child(3)' is selected.</msg>
-<status status="PASS" starttime="20220517 17:34:24.491" endtime="20220517 17:34:24.507"/>
+<msg timestamp="20220523 18:03:03.119" level="INFO">Verifying checkbox 'css: #checkboxes &gt; input[type=checkbox]:nth-child(3)' is selected.</msg>
+<status status="PASS" starttime="20220523 18:03:03.119" endtime="20220523 18:03:03.139"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220517 17:34:29.516" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20220517 17:34:24.508" endtime="20220517 17:34:29.516"/>
+<msg timestamp="20220523 18:03:08.142" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220523 18:03:03.140" endtime="20220523 18:03:08.142"/>
 </kw>
-<kw name="Close Session" type="TEARDOWN">
+<kw name="Close Session" library="base" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220517 17:34:29.517" endtime="20220517 17:34:31.619"/>
+<status status="PASS" starttime="20220523 18:03:08.142" endtime="20220523 18:03:10.268"/>
 </kw>
-<status status="PASS" starttime="20220517 17:34:29.517" endtime="20220517 17:34:31.620"/>
+<status status="PASS" starttime="20220523 18:03:08.142" endtime="20220523 18:03:10.268"/>
 </kw>
-<status status="PASS" starttime="20220517 17:34:19.566" endtime="20220517 17:34:31.620"/>
+<status status="PASS" starttime="20220523 18:02:57.859" endtime="20220523 18:03:10.269"/>
 </test>
-<test id="s1-t3" name="Validade xpath" line="21">
-<kw name="New Session" type="SETUP">
+<test id="s1-t3" name="Validade xpath" line="28">
+<kw name="New Session" library="base" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>https://training-wheels-protocol.herokuapp.com/checkboxes</arg>
+<arg>${url}/checkboxes</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220517 17:34:31.622" level="INFO">Opening browser 'chrome' to base url 'https://training-wheels-protocol.herokuapp.com/checkboxes'.</msg>
-<status status="PASS" starttime="20220517 17:34:31.622" endtime="20220517 17:34:37.502"/>
+<msg timestamp="20220523 18:03:10.271" level="INFO">Opening browser 'chrome' to base url 'https://training-wheels-protocol.herokuapp.com/checkboxes'.</msg>
+<status status="PASS" starttime="20220523 18:03:10.271" endtime="20220523 18:03:13.483"/>
 </kw>
-<status status="PASS" starttime="20220517 17:34:31.621" endtime="20220517 17:34:37.502"/>
+<status status="PASS" starttime="20220523 18:03:10.271" endtime="20220523 18:03:13.484"/>
 </kw>
 <kw name="Select Checkbox" library="SeleniumLibrary">
-<arg>xpath://*[@id='checkboxes']/input[7]</arg>
+<arg>${checkblackpanter}</arg>
 <doc>Selects the checkbox identified by ``locator``.</doc>
-<msg timestamp="20220517 17:34:37.503" level="INFO">Selecting checkbox 'xpath://*[@id='checkboxes']/input[7]'.</msg>
-<status status="PASS" starttime="20220517 17:34:37.502" endtime="20220517 17:34:37.551"/>
+<msg timestamp="20220523 18:03:13.485" level="INFO">Selecting checkbox 'xpath://*[@id='checkboxes']/input[7]'.</msg>
+<status status="PASS" starttime="20220523 18:03:13.484" endtime="20220523 18:03:13.547"/>
 </kw>
 <kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
-<arg>xpath://*[@id='checkboxes']/input[7]</arg>
+<arg>${checkblackpanter}</arg>
 <doc>Verifies checkbox ``locator`` is selected/checked.</doc>
-<msg timestamp="20220517 17:34:37.552" level="INFO">Verifying checkbox 'xpath://*[@id='checkboxes']/input[7]' is selected.</msg>
-<status status="PASS" starttime="20220517 17:34:37.551" endtime="20220517 17:34:37.569"/>
+<msg timestamp="20220523 18:03:13.548" level="INFO">Verifying checkbox 'xpath://*[@id='checkboxes']/input[7]' is selected.</msg>
+<status status="PASS" starttime="20220523 18:03:13.548" endtime="20220523 18:03:13.566"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220517 17:34:42.581" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20220517 17:34:37.570" endtime="20220517 17:34:42.581"/>
+<msg timestamp="20220523 18:03:18.569" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220523 18:03:13.566" endtime="20220523 18:03:18.569"/>
 </kw>
-<kw name="Close Session" type="TEARDOWN">
+<kw name="Close Session" library="base" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220517 17:34:42.581" endtime="20220517 17:34:44.704"/>
+<status status="PASS" starttime="20220523 18:03:18.570" endtime="20220523 18:03:20.666"/>
 </kw>
-<status status="PASS" starttime="20220517 17:34:42.581" endtime="20220517 17:34:44.704"/>
+<status status="PASS" starttime="20220523 18:03:18.570" endtime="20220523 18:03:20.666"/>
 </kw>
-<status status="PASS" starttime="20220517 17:34:31.621" endtime="20220517 17:34:44.704"/>
+<status status="PASS" starttime="20220523 18:03:10.270" endtime="20220523 18:03:20.667"/>
 </test>
-<status status="PASS" starttime="20220517 17:34:06.162" endtime="20220517 17:34:44.707"/>
+<status status="PASS" starttime="20220523 18:02:46.865" endtime="20220523 18:03:20.668"/>
 </suite>
 <statistics>
 <total>
