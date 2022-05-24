@@ -8,7 +8,7 @@ ${url}                  https://training-wheels-protocol.herokuapp.com
 
 *** Keywords ***
 New Session         
-     Open Browser          ${url}/checkboxes              chrome 
+     Open Browser          ${url}                 chrome 
 Close Session        
     Capture Page Screenshot        
     Close Browser 
