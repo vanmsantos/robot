@@ -6,4 +6,9 @@ test teardown encerra o caso de teste
 
  Capture Page Screenshot   captura uma imagem e anexa automaticamente no relatorio
 
+ site para testar 
+ https://training-wheels-protocol.herokuapp.com/
+
+ qaninja
+
 
