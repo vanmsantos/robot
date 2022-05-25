@@ -17,7 +17,7 @@ verifica o valor ao informar o numero da linha com falha pois na linha 1 nao tem
 
 Descobre a linha pelo texto chave e valida os demais valores
     Go To                       ${url}/tables    
-    ${target}=                  Get WebElement              document.querySelector("#actors > tbody > tr:nth-child(4) > td.actor")
+    ${target}=                  Get WebElement             xpath://*[@id="actors"]/tbody/tr[4]
     Log                         ${target.text}
     Log To Console              ${target.text}
     Should Contain              ${target.text}              $ 700.000
